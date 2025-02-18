@@ -1,0 +1,9 @@
+vm_name_base   = "yunohost-package-check"
+ssh_user       = "yunohost"
+ssh_pass       = "yunohost"
+box_disk_size  = 16384
+box_cpus       = 1
+box_memory     = 2048
+iso_urls       = "https://cdimage.debian.org/cdimage/archive/12.8.0/amd64/iso-cd/debian-12.8.0-amd64-netinst.iso"
+iso_sha256     = "04396d12b0f377958a070c38a923c227832fa3b3e18ddc013936ecf492e9fbb3"
+disk_name      = "/dev/vda"

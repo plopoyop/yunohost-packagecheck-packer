@@ -1,0 +1,22 @@
+---
+version: '3'
+
+tasks:
+  default:
+    desc: list all tasks
+    cmd: task --list-all
+
+  init:
+    desc: install packer plugins
+    cmd: packer init .
+
+  clean:
+    desc: remove previous build
+    cmd: rm -rf ./output/
+
+  build:
+    desc: build VM image
+    cmds:
+      - packer build .
+    generates:
+      - output/yunohost-package-check
